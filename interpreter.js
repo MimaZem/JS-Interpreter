@@ -23,6 +23,9 @@
  */
 'use strict';
 
+// FIX:
+var acorn = require('acorn');
+
 /**
  * Create a new interpreter.
  * @param {string|!Object} code Raw JavaScript text or AST.
