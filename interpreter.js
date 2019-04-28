@@ -3455,9 +3455,10 @@ Interpreter.prototype['stepWhileStatement'] =
 // Preserve top-level API functions from being pruned by JS compilers.
 // Add others as needed.
 // The global object ('window' in a browser, 'global' in node.js) is 'this'.
-this['Interpreter'] = Interpreter;
+//this['Interpreter'] = Interpreter;
 Interpreter.prototype['appendCode'] = Interpreter.prototype.appendCode;
 Interpreter.prototype['createAsyncFunction'] =
     Interpreter.prototype.createAsyncFunction;
 Interpreter.prototype['step'] = Interpreter.prototype.step;
 Interpreter.prototype['run'] = Interpreter.prototype.run;
+module.exports.Interpreter = Interpreter
